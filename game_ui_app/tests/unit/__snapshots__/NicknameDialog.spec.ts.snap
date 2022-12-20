@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NicknameDialog renders correctly 1`] = `
+<v-dialog-stub
+  closedelay="0"
+  contentclass=""
+  opendelay="0"
+  openonclick="true"
+  origin="center center"
+  persistent="true"
+  retainfocus="true"
+  transition="dialog-transition"
+  value="true"
+  width="320"
+>
+  <v-form-stub>
+    <v-card-stub
+      loaderheight="4"
+      tag="div"
+    >
+      <v-card-title-stub
+        tag="div"
+      >
+        Choose your display name
+      </v-card-title-stub>
+       
+      <v-card-text-stub
+        tag="div"
+      >
+        <v-text-field-stub
+          backgroundcolor=""
+          clearicon="$clear"
+          errorcount="1"
+          errormessages=""
+          label="Nickname"
+          loaderheight="2"
+          messages=""
+          outlined="true"
+          rules="[Function]"
+          successmessages=""
+          type="text"
+          value=""
+        />
+      </v-card-text-stub>
+       
+      <v-card-actions-stub
+        tag="div"
+      >
+        <v-spacer-stub
+          tag="div"
+        />
+         
+        <v-btn-stub
+          activeclass=""
+          color="primary"
+          tag="button"
+          type="button"
+        >
+          Continue to game
+        </v-btn-stub>
+      </v-card-actions-stub>
+    </v-card-stub>
+  </v-form-stub>
+</v-dialog-stub>
+`;

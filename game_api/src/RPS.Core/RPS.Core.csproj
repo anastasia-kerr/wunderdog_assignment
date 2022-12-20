@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>RPS.Core</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="Enums\j5rtw5ql.cso~" />
+    </ItemGroup>
+
+</Project>
