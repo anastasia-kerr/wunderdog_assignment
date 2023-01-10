@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\wunderdog_assignment\\game_api\\tests\\RPS.IntegrationTests\\RPS.IntegrationTests.csproj": {}
+    "C:\\dev\\assignment\\game_api\\tests\\RPS.IntegrationTests\\RPS.IntegrationTests.csproj": {}
   },
   "projects": {
-    "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.API\\RPS.API.csproj": {
+    "C:\\dev\\assignment\\game_api\\src\\RPS.API\\RPS.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.API\\RPS.API.csproj",
+        "projectUniqueName": "C:\\dev\\assignment\\game_api\\src\\RPS.API\\RPS.API.csproj",
         "projectName": "RPS.API",
-        "projectPath": "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.API\\RPS.API.csproj",
+        "projectPath": "C:\\dev\\assignment\\game_api\\src\\RPS.API\\RPS.API.csproj",
         "packagesPath": "C:\\Users\\davej\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.API\\obj\\",
+        "outputPath": "C:\\dev\\assignment\\game_api\\src\\RPS.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
@@ -33,11 +33,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.Application\\RPS.Application.csproj": {
-                "projectPath": "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.Application\\RPS.Application.csproj"
+              "C:\\dev\\assignment\\game_api\\src\\RPS.Application\\RPS.Application.csproj": {
+                "projectPath": "C:\\dev\\assignment\\game_api\\src\\RPS.Application\\RPS.Application.csproj"
               },
-              "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.DataAccess\\RPS.DataAccess.csproj": {
-                "projectPath": "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.DataAccess\\RPS.DataAccess.csproj"
+              "C:\\dev\\assignment\\game_api\\src\\RPS.DataAccess\\RPS.DataAccess.csproj": {
+                "projectPath": "C:\\dev\\assignment\\game_api\\src\\RPS.DataAccess\\RPS.DataAccess.csproj"
               }
             }
           }
@@ -98,14 +98,14 @@
         }
       }
     },
-    "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.Application\\RPS.Application.csproj": {
+    "C:\\dev\\assignment\\game_api\\src\\RPS.Application\\RPS.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.Application\\RPS.Application.csproj",
+        "projectUniqueName": "C:\\dev\\assignment\\game_api\\src\\RPS.Application\\RPS.Application.csproj",
         "projectName": "RPS.Application",
-        "projectPath": "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.Application\\RPS.Application.csproj",
+        "projectPath": "C:\\dev\\assignment\\game_api\\src\\RPS.Application\\RPS.Application.csproj",
         "packagesPath": "C:\\Users\\davej\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.Application\\obj\\",
+        "outputPath": "C:\\dev\\assignment\\game_api\\src\\RPS.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
@@ -127,8 +127,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.Core\\RPS.Core.csproj": {
-                "projectPath": "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.Core\\RPS.Core.csproj"
+              "C:\\dev\\assignment\\game_api\\src\\RPS.Core\\RPS.Core.csproj": {
+                "projectPath": "C:\\dev\\assignment\\game_api\\src\\RPS.Core\\RPS.Core.csproj"
               }
             }
           }
@@ -184,14 +184,14 @@
         }
       }
     },
-    "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.Core\\RPS.Core.csproj": {
+    "C:\\dev\\assignment\\game_api\\src\\RPS.Core\\RPS.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.Core\\RPS.Core.csproj",
+        "projectUniqueName": "C:\\dev\\assignment\\game_api\\src\\RPS.Core\\RPS.Core.csproj",
         "projectName": "RPS.Core",
-        "projectPath": "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.Core\\RPS.Core.csproj",
+        "projectPath": "C:\\dev\\assignment\\game_api\\src\\RPS.Core\\RPS.Core.csproj",
         "packagesPath": "C:\\Users\\davej\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.Core\\obj\\",
+        "outputPath": "C:\\dev\\assignment\\game_api\\src\\RPS.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
@@ -244,14 +244,14 @@
         }
       }
     },
-    "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.DataAccess\\RPS.DataAccess.csproj": {
+    "C:\\dev\\assignment\\game_api\\src\\RPS.DataAccess\\RPS.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.DataAccess\\RPS.DataAccess.csproj",
+        "projectUniqueName": "C:\\dev\\assignment\\game_api\\src\\RPS.DataAccess\\RPS.DataAccess.csproj",
         "projectName": "RPS.DataAccess",
-        "projectPath": "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.DataAccess\\RPS.DataAccess.csproj",
+        "projectPath": "C:\\dev\\assignment\\game_api\\src\\RPS.DataAccess\\RPS.DataAccess.csproj",
         "packagesPath": "C:\\Users\\davej\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.DataAccess\\obj\\",
+        "outputPath": "C:\\dev\\assignment\\game_api\\src\\RPS.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
@@ -273,8 +273,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.Core\\RPS.Core.csproj": {
-                "projectPath": "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.Core\\RPS.Core.csproj"
+              "C:\\dev\\assignment\\game_api\\src\\RPS.Core\\RPS.Core.csproj": {
+                "projectPath": "C:\\dev\\assignment\\game_api\\src\\RPS.Core\\RPS.Core.csproj"
               }
             }
           }
@@ -346,14 +346,14 @@
         }
       }
     },
-    "C:\\dev\\wunderdog_assignment\\game_api\\tests\\RPS.IntegrationTests\\RPS.IntegrationTests.csproj": {
+    "C:\\dev\\assignment\\game_api\\tests\\RPS.IntegrationTests\\RPS.IntegrationTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\wunderdog_assignment\\game_api\\tests\\RPS.IntegrationTests\\RPS.IntegrationTests.csproj",
+        "projectUniqueName": "C:\\dev\\assignment\\game_api\\tests\\RPS.IntegrationTests\\RPS.IntegrationTests.csproj",
         "projectName": "RPS.IntegrationTests",
-        "projectPath": "C:\\dev\\wunderdog_assignment\\game_api\\tests\\RPS.IntegrationTests\\RPS.IntegrationTests.csproj",
+        "projectPath": "C:\\dev\\assignment\\game_api\\tests\\RPS.IntegrationTests\\RPS.IntegrationTests.csproj",
         "packagesPath": "C:\\Users\\davej\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\wunderdog_assignment\\game_api\\tests\\RPS.IntegrationTests\\obj\\",
+        "outputPath": "C:\\dev\\assignment\\game_api\\tests\\RPS.IntegrationTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
@@ -375,11 +375,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.API\\RPS.API.csproj": {
-                "projectPath": "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.API\\RPS.API.csproj"
+              "C:\\dev\\assignment\\game_api\\src\\RPS.API\\RPS.API.csproj": {
+                "projectPath": "C:\\dev\\assignment\\game_api\\src\\RPS.API\\RPS.API.csproj"
               },
-              "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.Application\\RPS.Application.csproj": {
-                "projectPath": "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.Application\\RPS.Application.csproj"
+              "C:\\dev\\assignment\\game_api\\src\\RPS.Application\\RPS.Application.csproj": {
+                "projectPath": "C:\\dev\\assignment\\game_api\\src\\RPS.Application\\RPS.Application.csproj"
               }
             }
           }

@@ -2,7 +2,7 @@
 
 namespace RPS.Application.Models.Game
 {
-    public class CreateGameModelValidator : AbstractValidator<CreateGameModel>
+    public class CreateGameModelValidator : AbstractValidator<SetLightModel>
     {
         public CreateGameModelValidator()
         {

@@ -8,6 +8,6 @@ public class GameProfile : Profile
 {
     public GameProfile()
     {
-        CreateMap<CreateGameModel, Game>()
+        CreateMap<SetLightModel, Game>()
                .ForMember(ti => ti.CreatedBy, ti => ti.MapFrom(cti => cti.Nickname));
     }}

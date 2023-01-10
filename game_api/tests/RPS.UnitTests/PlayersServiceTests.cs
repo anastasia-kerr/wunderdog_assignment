@@ -71,7 +71,7 @@ public class PlayersServiceTests : BaseServiceTestConfiguration
 
         //Assert
         await _gameRepository.Received().UpdateAsync(Arg.Any<Game>());
-        round.State.Should().Be(RoundState.Created);
+        round.State.Should().Be(SystemState.Created);
     }
 
     [Fact]
@@ -153,7 +153,7 @@ public class PlayersServiceTests : BaseServiceTestConfiguration
         //Arrange
         var players = Builder<Player>.CreateListOfSize(2).Build().ToList();
 
-        var round = Builder<Round>.CreateNew().With(r => r.Players = players).With(r=>r.State= RoundState.Completed).Build();
+        var round = Builder<Round>.CreateNew().With(r => r.Players = players).With(r=>r.State= SystemState.Completed).Build();
 
         var game = Builder<Game>.CreateNew()
          .With(tl => tl.Rounds = new List<Round> { round })

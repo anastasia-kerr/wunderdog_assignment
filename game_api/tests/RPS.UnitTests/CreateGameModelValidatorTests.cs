@@ -21,7 +21,7 @@ namespace RPS.UnitTests
         public void Validator_Should_Have_Error_When_N_Is_Empty()
         {
             // Arrange
-            var createTodoItemModel = new CreateGameModel { NumberOfRounds = 0 };
+            var createTodoItemModel = new SetLightModel { NumberOfRounds = 0 };
 
             // Act
             var result = _sut.TestValidate(createTodoItemModel);

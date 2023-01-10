@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.Core\\RPS.Core.csproj",
+      "projectUniqueName": "C:\\dev\\assignment\\game_api\\src\\RPS.Core\\RPS.Core.csproj",
       "projectName": "RPS.Core",
-      "projectPath": "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.Core\\RPS.Core.csproj",
+      "projectPath": "C:\\dev\\assignment\\game_api\\src\\RPS.Core\\RPS.Core.csproj",
       "packagesPath": "C:\\Users\\davej\\.nuget\\packages\\",
-      "outputPath": "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.Core\\obj\\",
+      "outputPath": "C:\\dev\\assignment\\game_api\\src\\RPS.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",

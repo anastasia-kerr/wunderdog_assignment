@@ -18,8 +18,7 @@ public static class ApplicationDependencyInjection
 
     private static void AddServices(this IServiceCollection services, IWebHostEnvironment env)
     {
-        services.AddScoped<IGamePlayService, GamePlayService>();
-        services.AddScoped<IPlayersService, PlayersService>();
+        services.AddScoped<ITaskService, TaskService>();
     }
 
     private static void RegisterAutoMapper(this IServiceCollection services)

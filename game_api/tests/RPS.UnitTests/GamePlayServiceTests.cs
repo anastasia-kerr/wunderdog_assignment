@@ -13,18 +13,18 @@ namespace RPS.UnitTests.Services;
 
 public class GamePlayServiceTests : BaseServiceTestConfiguration
 {
-    private readonly IGamePlayService _gamePlayService;
+    private readonly ITaskService _gamePlayService;
 
     public GamePlayServiceTests()
     {
-        _gamePlayService = new GamePlayService(_gameRepository, Mapper);
+        _gamePlayService = new TaskService(_gameRepository, Mapper);
     }
 
     [Fact]
     public async Task CreateGameAsync_Should_Return_New_Game_Id()
     {
         //Arrange
-        var command = Builder<CreateGameModel>.CreateNew().Build();
+        var command = Builder<SetLightModel>.CreateNew().Build();
         var game = Mapper.Map<Game>(command);
         game.Id = 1;
 
@@ -43,7 +43,7 @@ public class GamePlayServiceTests : BaseServiceTestConfiguration
     public async Task CreateGameAsync_Should_Make_Correct_Number_Of_Rounds()
     {
         //Arrange
-        var command = Builder<CreateGameModel>.CreateNew().Build();
+        var command = Builder<SetLightModel>.CreateNew().Build();
         command.NumberOfRounds = 22;
         var game = Mapper.Map<Game>(command);
 
@@ -82,7 +82,7 @@ public class GamePlayServiceTests : BaseServiceTestConfiguration
         var result = await _gamePlayService.PlaceRoundGesture(game.Id, command);
 
         //Assert
-        result.Id.Should().Be(game.Id);
+        result.TaskId.Should().Be(game.Id);
          await _gameRepository.Received().UpdateAsync(Arg.Any<Game>());
         round.Players.Find(x => x.Identifier == command.PlayerIdentifier).Gesture.Should().Be(command.RoundGesture);
     }
@@ -112,7 +112,7 @@ public class GamePlayServiceTests : BaseServiceTestConfiguration
         var result = await _gamePlayService.PlaceRoundGesture(game.Id, command);
 
         //Assert
-        round.State.Should().Be(Core.Enums.RoundState.Completed);
+        round.State.Should().Be(Core.Enums.SystemState.Completed);
     }
     [Fact]
     public async Task PlaceRoundGesture_Not_All_Players_Made_Gesture_Should_Not_Set_Round_To_Complete_()
@@ -142,7 +142,7 @@ public class GamePlayServiceTests : BaseServiceTestConfiguration
         var result = await _gamePlayService.PlaceRoundGesture(game.Id, command);
 
         //Assert
-        round.State.Should().NotBe(Core.Enums.RoundState.Completed);
+        round.State.Should().NotBe(Core.Enums.SystemState.Completed);
     }
 
     [Fact]
@@ -178,7 +178,7 @@ public class GamePlayServiceTests : BaseServiceTestConfiguration
         //Arrange
         var players = Builder<Player>.CreateListOfSize(2).Build().ToList();
         players.First().Gesture = null;
-        var round = Builder<Round>.CreateNew().With(r=>r.State = Core.Enums.RoundState.Started).With(r => r.Players = players).Build();
+        var round = Builder<Round>.CreateNew().With(r=>r.State = Core.Enums.SystemState.Started).With(r => r.Players = players).Build();
 
         var game = Builder<Game>.CreateNew()
          .With(tl => tl.Rounds = new List<Round> { round })
@@ -202,11 +202,11 @@ public class GamePlayServiceTests : BaseServiceTestConfiguration
         var loser = Builder<Player>.CreateNew().With(p => p.Nickname = "loser").With(p => p.Gesture = Gesture.Rock).Build();
 
         var round1 = Builder<Round>.CreateNew()
-            .With(r => r.State = Core.Enums.RoundState.Completed)
+            .With(r => r.State = Core.Enums.SystemState.Completed)
             .With(r => r.Players = new List<Player> { winner, loser })
             .Build();
         var round2 = Builder<Round>.CreateNew()
-                                   .With(r => r.State = Core.Enums.RoundState.Completed)
+                                   .With(r => r.State = Core.Enums.SystemState.Completed)
                                    .With(r => r.Players = new List<Player> { winner, loser })
                                    .Build();
         var game = Builder<Game>.CreateNew()
@@ -231,7 +231,7 @@ public class GamePlayServiceTests : BaseServiceTestConfiguration
         var player2 = Builder<Player>.CreateNew().With(p => p.Nickname = "player2").With(p => p.Gesture = Gesture.Paper).Build();
 
         var round = Builder<Round>.CreateNew()
-            .With(r => r.State = Core.Enums.RoundState.Completed)
+            .With(r => r.State = Core.Enums.SystemState.Completed)
             .With(r => r.Players = new List<Player> { player1, player2 })
             .Build();
 
@@ -257,7 +257,7 @@ public class GamePlayServiceTests : BaseServiceTestConfiguration
         var loser = Builder<Player>.CreateNew().With(p => p.Nickname = "loser").With(p => p.Gesture = Gesture.Rock).Build();
 
         var round = Builder<Round>.CreateNew()
-            .With(r => r.State = RoundState.Completed)
+            .With(r => r.State = SystemState.Completed)
             .With(r => r.Players = new List<Player> { winner, loser })
             .Build();
 
@@ -287,7 +287,7 @@ public class GamePlayServiceTests : BaseServiceTestConfiguration
         players.ForEach(p => p.Gesture = Gesture.Rock);
 
         var round = Builder<Round>.CreateNew()
-            .With(r => r.State = RoundState.Completed)
+            .With(r => r.State = SystemState.Completed)
             .With(r => r.Players = players)
             .Build();
 
@@ -316,7 +316,7 @@ public class GamePlayServiceTests : BaseServiceTestConfiguration
         players.ForEach(p => p.Gesture = null);
 
         var round = Builder<Round>.CreateNew()
-            .With(r => r.State = RoundState.Completed)
+            .With(r => r.State = SystemState.Completed)
             .With(r => r.Players = players)
             .Build();
 
@@ -341,7 +341,7 @@ public class GamePlayServiceTests : BaseServiceTestConfiguration
         var players = Builder<Player>.CreateListOfSize(2).Build().ToList();
 
         var round = Builder<Round>.CreateNew()
-            .With(r => r.State = RoundState.Completed)
+            .With(r => r.State = SystemState.Completed)
             .With(r => r.Players = players)
             .Build();
 

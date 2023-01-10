@@ -12,7 +12,7 @@ namespace RPS.Core.Entities
         {
             get
             {
-                return Rounds.OrderBy(r => r.RoundNumber).FirstOrDefault(r => r.State != RoundState.Completed);
+                return Rounds.OrderBy(r => r.RoundNumber).FirstOrDefault(r => r.State != SystemState.Completed);
             }
         }
         public Boolean IsGameComplete {

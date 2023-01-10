@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m0dlFXHtgfcprtHANFtZFc4209/nGEF20iGlWFGSsjRgTlk4l/F8s74M1z0e5AmOcYoWalIcDkUA++ZfIHN1kw==",
+  "dgSpecHash": "JH79+0Sx10gGa20F43ShhSpkTwjBjFFeXwDPPLFr36AyfEhLGQhHqPlh9Zgynrf5wo1UWkXwcpVQZAfNbm86vQ==",
   "success": true,
-  "projectFilePath": "C:\\dev\\wunderdog_assignment\\game_api\\tests\\RPS.IntegrationTests\\RPS.IntegrationTests.csproj",
+  "projectFilePath": "C:\\dev\\assignment\\game_api\\tests\\RPS.IntegrationTests\\RPS.IntegrationTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\davej\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\davej\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

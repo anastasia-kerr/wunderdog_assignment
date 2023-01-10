@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5bhsp+JfF6ilPG7QAsqPIl+V0GJePdconl5dTFBo5SYzHfOIswBcTpziwFADHBjkqsBB0RVLOTwXgLDjfqz7SA==",
+  "dgSpecHash": "awIcxsK1/6lRaXUgB2xZgV/NUIrNCG4udYQI34URFFk4jZGn86KrvlAPdIOiGOrQxpwdtvwcWRNkj8agcZudTg==",
   "success": true,
-  "projectFilePath": "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.Application\\RPS.Application.csproj",
+  "projectFilePath": "C:\\dev\\assignment\\game_api\\src\\RPS.Application\\RPS.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\davej\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\davej\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

@@ -22,7 +22,7 @@ namespace RPS.UnitTests.Entities
         public void CurrentRound_Should_Return_Null_If_All_Rounds_Complete()
         {
             var rounds = Builder<Round>.CreateListOfSize(3).Build().ToList();
-            rounds.ForEach(r => r.State = RoundState.Completed);
+            rounds.ForEach(r => r.State = SystemState.Completed);
 
             var game = Builder<Game>.CreateNew().With(g => g.Rounds = rounds).Build();
 
@@ -34,7 +34,7 @@ namespace RPS.UnitTests.Entities
         public void IsGameComplete_Should_Return_True_If_All_Rounds_Complete()
         {
             var rounds = Builder<Round>.CreateListOfSize(3).Build().ToList();
-            rounds.ForEach(r => r.State = RoundState.Completed);
+            rounds.ForEach(r => r.State = SystemState.Completed);
 
             var game = Builder<Game>.CreateNew().With(g => g.Rounds = rounds).Build();
 

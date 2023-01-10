@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RPS.IntegrationTests
-build_property.ProjectDir = C:\dev\wunderdog_assignment\game_api\tests\RPS.IntegrationTests\
+build_property.ProjectDir = C:\dev\assignment\game_api\tests\RPS.IntegrationTests\

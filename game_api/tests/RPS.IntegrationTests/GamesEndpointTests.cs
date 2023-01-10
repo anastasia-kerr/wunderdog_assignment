@@ -28,13 +28,13 @@ namespace RPS.IntegrationTests
             // Arrange
             var context = Host.Services.GetRequiredService<DatabaseContext>();
 
-            var createGame = Builder<CreateGameModel>.CreateNew().With(g=>g.NumberOfRounds = numberOfRounds).Build();
+            var createGame = Builder<SetLightModel>.CreateNew().With(g=>g.NumberOfRounds = numberOfRounds).Build();
 
             // Act
             var apiResponse = await Client.PostAsync("/api/games", new JsonContent(createGame));
 
             // Assert
-            var response = await ResponseHelper.GetApiResultAsync<CreateGameResponseModel>(apiResponse);
+            var response = await ResponseHelper.GetApiResultAsync<GetLightResponseModel>(apiResponse);
             gameId = response.Result.Id;
 
             var game = await context.Games.Where(u => u.Id == response.Result.Id).FirstOrDefaultAsync();
@@ -49,13 +49,13 @@ namespace RPS.IntegrationTests
             // Arrange
             var context = Host.Services.GetRequiredService<DatabaseContext>();
 
-            var createGame = Builder<CreateGameModel>.CreateNew().With(g=>g.NumberOfRounds = 0).Build();
+            var createGame = Builder<SetLightModel>.CreateNew().With(g=>g.NumberOfRounds = 0).Build();
 
             // Act
             var apiResponse = await Client.PostAsync("/api/games", new JsonContent(createGame));
 
             // Assert
-            var response = await ResponseHelper.GetApiResultAsync<CreateGameResponseModel>(apiResponse);
+            var response = await ResponseHelper.GetApiResultAsync<GetLightResponseModel>(apiResponse);
 
             apiResponse.StatusCode.Should().Be(HttpStatusCode.BadRequest);
             CheckResponse.Failure(response);

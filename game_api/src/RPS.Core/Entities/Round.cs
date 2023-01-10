@@ -8,7 +8,7 @@ namespace RPS.Core.Entities
     {
         public Game Game { get; set; }
         public int RoundNumber { get; set; }
-        public RoundState State { get; set; }
+        public SystemState State { get; set; }
         public List<Player> Players { get; set; } = new List<Player>();
         public Player? Winner
         {

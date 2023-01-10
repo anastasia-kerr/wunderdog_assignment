@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JPjd5NXSYuP7AKCZ+dlKo2VF3e0/wrzdHVYlz9I8Sk3nSD5PdMbqZV6/70oiC0HtqR0P6Du9KzX4txqF5vVbYw==",
+  "dgSpecHash": "409MLx/OJs/GYELdqMD2ar06ZyuzVhLB1fNsT1PxxYouTu72g4ooKBC64IHOJQEgNvbTE+cCnisGCvB+q8HMrA==",
   "success": true,
-  "projectFilePath": "C:\\dev\\wunderdog_assignment\\game_api\\src\\RPS.Core\\RPS.Core.csproj",
+  "projectFilePath": "C:\\dev\\assignment\\game_api\\src\\RPS.Core\\RPS.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
