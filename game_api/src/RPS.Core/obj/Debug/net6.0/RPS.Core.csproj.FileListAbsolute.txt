@@ -22,3 +22,15 @@ C:\dev\wunderdog_assignment\game_api\src\RPS.Core\obj\Debug\net6.0\RPS.Core.dll
 C:\dev\wunderdog_assignment\game_api\src\RPS.Core\obj\Debug\net6.0\refint\RPS.Core.dll
 C:\dev\wunderdog_assignment\game_api\src\RPS.Core\obj\Debug\net6.0\RPS.Core.pdb
 C:\dev\wunderdog_assignment\game_api\src\RPS.Core\obj\Debug\net6.0\ref\RPS.Core.dll
+C:\dev\assignment\game_api\src\RPS.Core\bin\Debug\net6.0\RPS.Core.deps.json
+C:\dev\assignment\game_api\src\RPS.Core\bin\Debug\net6.0\RPS.Core.dll
+C:\dev\assignment\game_api\src\RPS.Core\bin\Debug\net6.0\RPS.Core.pdb
+C:\dev\assignment\game_api\src\RPS.Core\obj\Debug\net6.0\RPS.Core.csproj.AssemblyReference.cache
+C:\dev\assignment\game_api\src\RPS.Core\obj\Debug\net6.0\RPS.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\assignment\game_api\src\RPS.Core\obj\Debug\net6.0\RPS.Core.AssemblyInfoInputs.cache
+C:\dev\assignment\game_api\src\RPS.Core\obj\Debug\net6.0\RPS.Core.AssemblyInfo.cs
+C:\dev\assignment\game_api\src\RPS.Core\obj\Debug\net6.0\RPS.Core.csproj.CoreCompileInputs.cache
+C:\dev\assignment\game_api\src\RPS.Core\obj\Debug\net6.0\RPS.Core.dll
+C:\dev\assignment\game_api\src\RPS.Core\obj\Debug\net6.0\refint\RPS.Core.dll
+C:\dev\assignment\game_api\src\RPS.Core\obj\Debug\net6.0\RPS.Core.pdb
+C:\dev\assignment\game_api\src\RPS.Core\obj\Debug\net6.0\ref\RPS.Core.dll

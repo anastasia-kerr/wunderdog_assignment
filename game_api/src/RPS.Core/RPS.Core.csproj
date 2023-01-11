@@ -10,4 +10,8 @@
       <None Remove="Enums\j5rtw5ql.cso~" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Services\" />
+    </ItemGroup>
+
 </Project>

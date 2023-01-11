@@ -1,7 +1,8 @@
 ﻿namespace RPS.Core.Enums
 {
-   public enum SystemState
+    public enum SystemState
     {
+        Unknown,
         Green,
         Amber,
         Red

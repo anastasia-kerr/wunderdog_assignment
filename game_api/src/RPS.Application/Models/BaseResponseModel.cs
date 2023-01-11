@@ -2,5 +2,4 @@
 
 public class BaseResponseModel
 {
-    public int TaskId { get; set; }
 }

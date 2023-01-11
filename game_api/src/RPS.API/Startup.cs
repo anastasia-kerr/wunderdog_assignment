@@ -1,8 +1,6 @@
-﻿using FluentValidation.AspNetCore;
-using RPS.API.Filters;
+﻿using RPS.API.Filters;
 using RPS.Application;
 using RPS.DataAccess;
-using PRS.Application.Models.Validators;
 using N_Tier.API.Middleware;
 
 namespace RPS.API;
@@ -22,9 +20,6 @@ public class Startup
     {
         services.AddControllers(
                 config => config.Filters.Add(typeof(ValidateModelAttribute))
-            )
-            .AddFluentValidation(
-                options => options.RegisterValidatorsFromAssemblyContaining<IValidationsMarker>()
             );
 
         services.AddSwagger();

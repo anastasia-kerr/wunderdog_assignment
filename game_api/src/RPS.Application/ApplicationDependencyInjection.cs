@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using RPS.Application.Services;
-using RPS.Application.MappingProfiles;
+using RPS.Application.Validators;
 
 namespace RPS.Application;
 
@@ -11,18 +11,15 @@ public static class ApplicationDependencyInjection
     {
         services.AddServices(env);
 
-        services.RegisterAutoMapper();
-
         return services;
     }
 
     private static void AddServices(this IServiceCollection services, IWebHostEnvironment env)
     {
         services.AddScoped<ITaskService, TaskService>();
-    }
-
-    private static void RegisterAutoMapper(this IServiceCollection services)
-    {
-        services.AddAutoMapper(typeof(IMappingProfilesMarker));
+        services.AddScoped<ISystemService, SystemService>();
+        services.AddSingleton<ISystemStateValidator, RedStateValidator>();
+        services.AddSingleton<ISystemStateValidator, AmberStateValidator>();
+        services.AddSingleton<ISystemStateValidator, GreenStateValidator>();
     }
 }

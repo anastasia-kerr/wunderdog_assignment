@@ -324,3 +324,12 @@ C:\dev\wunderdog_assignment\game_api\tests\RPS.IntegrationTests\obj\Debug\net6.0
 C:\dev\wunderdog_assignment\game_api\tests\RPS.IntegrationTests\obj\Debug\net6.0\RPS.IntegrationTests.pdb
 C:\dev\wunderdog_assignment\game_api\tests\RPS.IntegrationTests\obj\Debug\net6.0\RPS.IntegrationTests.genruntimeconfig.cache
 C:\dev\wunderdog_assignment\game_api\tests\RPS.IntegrationTests\obj\Debug\net6.0\ref\RPS.IntegrationTests.dll
+C:\dev\assignment\game_api\tests\RPS.IntegrationTests\bin\Debug\net6.0\CoverletSourceRootsMapping
+C:\dev\assignment\game_api\tests\RPS.IntegrationTests\obj\Debug\net6.0\RPS.IntegrationTests.csproj.AssemblyReference.cache
+C:\dev\assignment\game_api\tests\RPS.IntegrationTests\obj\Debug\net6.0\RPS.IntegrationTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\assignment\game_api\tests\RPS.IntegrationTests\obj\Debug\net6.0\RPS.IntegrationTests.AssemblyInfoInputs.cache
+C:\dev\assignment\game_api\tests\RPS.IntegrationTests\obj\Debug\net6.0\RPS.IntegrationTests.AssemblyInfo.cs
+C:\dev\assignment\game_api\tests\RPS.IntegrationTests\obj\Debug\net6.0\RPS.IntegrationTests.csproj.CoreCompileInputs.cache
+C:\dev\assignment\game_api\tests\RPS.IntegrationTests\obj\Debug\net6.0\RPS.IntegrationTests.dll
+C:\dev\assignment\game_api\tests\RPS.IntegrationTests\obj\Debug\net6.0\refint\RPS.IntegrationTests.dll
+C:\dev\assignment\game_api\tests\RPS.IntegrationTests\obj\Debug\net6.0\RPS.IntegrationTests.pdb

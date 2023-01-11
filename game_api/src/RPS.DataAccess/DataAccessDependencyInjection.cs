@@ -21,8 +21,7 @@ public static class DataAccessDependencyInjection
 
     private static void AddRepositories(this IServiceCollection services)
     {
-        services.AddScoped<IGameRepository, GameRepository>();
-
+        services.AddScoped<ITaskRepository, TaskRepository>();
     }
 
     private static void AddDatabase(this IServiceCollection services, IConfiguration configuration)

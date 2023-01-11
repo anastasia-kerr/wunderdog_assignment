@@ -3,7 +3,6 @@ using FluentAssertions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using NUnit.Framework;
-using RPS.Application.Models.Game;
 using RPS.Core.Enums;
 using RPS.DataAccess.Persistence;
 using RPS.IntegrationTests.Config;
@@ -76,7 +75,7 @@ namespace RPS.IntegrationTests
         [Test, Order(4)]
         public async Task Gesture_Should_Return_Success_If_Player_Joined_Game_and_CurrentRound_Is_Not_Null()
         {
-            var apiResponse = await PlaceRoundGestureAsync(player1Nickname, player1Identifier, Gesture.Rock);
+            var apiResponse = await PlaceRoundGestureAsync(player1Nickname, player1Identifier, Importance.Rock);
 
             var response = await ResponseHelper.GetApiResultAsync<PlaceRoundGestureResponseModel>(apiResponse);
 
@@ -86,7 +85,7 @@ namespace RPS.IntegrationTests
         [Test, Order(5)]
         public async Task Gesture_Should_Return_BadRequest_If_Player_Not_In_Game()
         {
-            var apiResponse = await PlaceRoundGestureAsync(player2Nickname, player2Identifier, Gesture.Rock);
+            var apiResponse = await PlaceRoundGestureAsync(player2Nickname, player2Identifier, Importance.Rock);
 
             var response = await ResponseHelper.GetApiResultAsync<PlaceRoundGestureResponseModel>(apiResponse);
 
@@ -107,7 +106,7 @@ namespace RPS.IntegrationTests
         public async Task GetRoundResult_Should_Return_Draw_Result()
         {
             await JoinCurrentRoundAsync(player2Nickname, player2Identifier);
-            await PlaceRoundGestureAsync(player2Nickname, player2Identifier, Gesture.Rock);
+            await PlaceRoundGestureAsync(player2Nickname, player2Identifier, Importance.Rock);
 
             var apiResponse = await Client.GetAsync($"/api/games/{gameId}/result/1");
 
@@ -134,8 +133,8 @@ namespace RPS.IntegrationTests
         [Test, Order(9)]
         public async Task Game_Should_Return_Winner_Name()
         {
-            await PlaceRoundGestureAsync(player1Nickname, player1Identifier, Gesture.Rock);
-            await PlaceRoundGestureAsync(player2Nickname, player2Identifier, Gesture.Scissors);
+            await PlaceRoundGestureAsync(player1Nickname, player1Identifier, Importance.Rock);
+            await PlaceRoundGestureAsync(player2Nickname, player2Identifier, Importance.Scissors);
 
             var apiResponse = await Client.GetAsync($"/api/games/{gameId}/result");
 
@@ -157,7 +156,7 @@ namespace RPS.IntegrationTests
             return await Client.PutAsync($"/api/games/{gameId}/join", new JsonContent(command));
         }
 
-        private async Task<HttpResponseMessage> PlaceRoundGestureAsync(string nickname, string identifier, Gesture gestutre)
+        private async Task<HttpResponseMessage> PlaceRoundGestureAsync(string nickname, string identifier, Importance gestutre)
         {
             var command = Builder<PlaceRoundGestureModel>.CreateNew()
               .With(p => p.PlayerNickname = nickname)

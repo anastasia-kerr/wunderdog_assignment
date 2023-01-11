@@ -1,7 +1,6 @@
 ﻿using Newtonsoft.Json;
 using RPS.Application.Exceptions;
 using RPS.Application.Models;
-using RPS.Core.Exceptions;
 
 namespace N_Tier.API.Middleware;
 
@@ -35,8 +34,6 @@ public class ExceptionHandlingMiddleware
         {
             NotFoundException => StatusCodes.Status404NotFound,
             BadRequestException => StatusCodes.Status400BadRequest,
-            GameCompleteException => StatusCodes.Status400BadRequest,
-            GameIsNotCompleteException => StatusCodes.Status400BadRequest,
             _ => code
         };
 
