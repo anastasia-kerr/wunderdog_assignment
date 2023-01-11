@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { CreateGameResponse, GetCurrentRoundPlayersResponse, GetGameResultResponse, GetRoundResultResponse, JoinCurrentRoundResponse, LeaveCurrentRoundResponse, PlaceGestureResponse } from './types'
+import { GetStateResponse, GetTasksResponse, SystemTask } from './types'
 
 function setUpInterceptors () {
   axios.interceptors.response.use(null, (error) => {
@@ -15,49 +15,19 @@ export function setApiDefaults (url:string) {
   axios.defaults.baseURL = url
   setUpInterceptors()
 }
-export async function createGame (payload : {nickname:string, numberOfRounds:number}):Promise<number> {
-  const { data } = await axios.post<CreateGameResponse>(
-    'api/Games',
-    payload
+export async function getTasks ():Promise<SystemTask[]> {
+  const { data } = await axios.get<GetTasksResponse>(
+    'api/System/tasks'
   )
-  return data.result.id
+  return data.result.tasks
 }
-export async function joinCurrentRound (payload : { gameId:string, playerNickname:string, playerIdentifier:string}):Promise<number> {
-  const { data } = await axios.put<JoinCurrentRoundResponse>(
-    `api/Games/${payload.gameId}/join`,
-    payload
+export async function getState ():Promise<string> {
+  const { data } = await axios.get<GetStateResponse>(
+    'api/System'
   )
-  return data.result.roundNumber
+  return data.result.state
 }
-export async function getCurrentRoundPlayers (gameId:string):Promise<string[]> {
-  const { data } = await axios.get<GetCurrentRoundPlayersResponse>(
-    `api/Games/${gameId}/players`
-  )
-  return data.result.players
-}
-export async function getRoundResults (gameId:string, round:number):Promise<GetRoundResultResponse> {
-  const { data } = await axios.get<GetRoundResultResponse>(
-    `api/Games/${gameId}/result/${round}`
-  )
-  return data
-}
-export async function getGameResult (gameId:string):Promise<GetGameResultResponse> {
-  const { data } = await axios.get<GetGameResultResponse>(
-    `api/Games/${gameId}/result/`
-  )
-  return data
-}
-export async function leaveCurrentRound (payload : { gameId:string, playerIdentifier:string}):Promise<number> {
-  const { data } = await axios.put<LeaveCurrentRoundResponse>(
-    `api/Games/${payload.gameId}/leave`,
-    payload
-  )
-  return data.result.roundNumber
-}
-export async function placeGesture (payload : { gameId:string, playerNickname:string, playerIdentifier:string, roundGesture:number}):Promise<number> {
-  const { data } = await axios.post<PlaceGestureResponse>(
-    `api/Games/${payload.gameId}/gesture`,
-    payload
-  )
-  return data.result.id
+
+export async function setTaskState (payload : { taskId:string, isOff:boolean}):Promise<void> {
+  await axios.put(`api/system/task/${payload.taskId}?isOff=${payload.isOff}`)
 }

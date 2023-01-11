@@ -1,21 +1,14 @@
 <template>
   <v-app>
-    <v-main>
-      <router-view/>
-    </v-main>
+    <home-view/>
   </v-app>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-
+import HomeView from './views/HomeView.vue'
 export default Vue.extend({
   name: 'App',
-  created () {
-    if (this.$route.params.id) {
-      this.$store.commit('resetGameState')
-      this.$store.commit('setGameId', this.$route.params.id)
-    }
-  }
+  components: { HomeView }
 })
 </script>

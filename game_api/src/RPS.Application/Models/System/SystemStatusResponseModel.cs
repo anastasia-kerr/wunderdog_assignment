@@ -4,6 +4,6 @@ namespace RPS.Application.Models.System
 {
     public class SystemStatusResponseModel
     {
-        public SystemState State { get; set; }
+        public string State { get; set; }
     }
 }

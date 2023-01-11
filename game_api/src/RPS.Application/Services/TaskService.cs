@@ -13,7 +13,7 @@ public class TaskService : ITaskService
     }
     public async Task<SetTaskResponseModel> SetTask(SetTaskModel command)
     {
-        var task = await _taskRepository.GetFirstAsync(g => g.Title == command.Name);
+        var task = await _taskRepository.GetFirstAsync(g => g.Id == command.Id);
         task.IsOff = command.IsOff;
 
         if (command.IsOff)

@@ -5,7 +5,7 @@ namespace RPS.Application.Models.Task
     public class SetTaskModel
     {
         public bool IsOff { get; set; }
-        public string Name { get; set; }
+        public Guid Id { get; set; }
     }
 
     public class SetTaskResponseModel : BaseResponseModel

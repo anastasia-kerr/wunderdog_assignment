@@ -18,11 +18,11 @@ public class SystemController : ApiController
         _systemService = systemService;
     }
 
-    [HttpPut("task/{name}")]
-    public async Task<IActionResult> SetTaskAsync(string name, bool isOff)
+    [HttpPut("task/{id}")]
+    public async Task<IActionResult> SetTaskAsync(Guid id, bool isOff)
     {
         return Ok(ApiResult<SetTaskResponseModel>.Success(
-       await _taskService.SetTask(new SetTaskModel() { IsOff = isOff, Name = name })));
+       await _taskService.SetTask(new SetTaskModel() { IsOff = isOff, Id = id })));
     }
 
     [HttpGet("tasks")]

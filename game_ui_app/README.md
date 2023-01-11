@@ -1,10 +1,3 @@
-# Rock Paper Scissors MVP solution
-
-## Important notes about the solution
-- I chose to use material design icons and vuetify - for ease of dev really, but in real life scenario it's probbaly an overkill
-- axios error checking is global to console.log at the moment because of ease of dev, but should be persisted to some sort of logging service
-- I wrote my own polling method (api/helper.ts) to deal with live UI updates for the user, i.e. waiting for player to join, or waiting for round results. I originally planned on using SignalR but it is a bit drastic for such a small problem
-
 ## Technologies
 - Vuetify
 - Vue 2.X.X
